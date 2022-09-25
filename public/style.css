@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    margin: 0;
+}
+
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F7FB;
+    color: #293264;
+    position: relative;
+}
+
+button {
+    border: none;
+    background-color: #4D5B9E;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.blob-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.blob-1,
+.blob-2 {
+    position: absolute;
+    transform: scale(4);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.blob-1 {
+    bottom: 0;
+}
+
+.blob-2 {
+    right: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/************************
+Start Page
+************************/
+
+#start-page {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.start-wrapper {}
+
+#category {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.start-btn {
+    padding: 15px 40px;
+}
+
+
+/************************
+Questions
+************************/
+
+#question-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.question-wrapper {
+    margin: 20px 30px;
+    max-width: 700px;
+}
+
+.question {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.choices {
+    font-size: 10px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.choice {
+    border: 1px solid black;
+    padding: 3px 10px;
+    border-radius: .5rem;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    background-color: grey;
+    width: 100%;
+    height: 0.5px;
+}
+
+.end-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.score-text {
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.new-btn {
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .question {
+        font-weight: 600;
+        font-size: .8rem;
+    }
+
+    .choice {
+        padding: 2px 6px;
+        margin: 5px;
+        font-size: .6rem;
+    }
+
+    .choices {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+}
